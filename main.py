@@ -45,7 +45,5 @@ documents = [input(f"Enter document {i+1}: ") for i in range(n)]
 query = tokenize(input("Enter the query: "))
 
 corpus = documents
-
 ranking = calculate_query_likelihood(query, documents, corpus, lambda_=0.5)
-
 print(ranking)
